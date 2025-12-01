@@ -321,3 +321,11 @@
   width: 20%;
   border: 2% solid burlywood;
 }
+
+.profileSectionButtons {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-evenly;
+  gap: 30px;
+  margin-top: 30px;
+}
