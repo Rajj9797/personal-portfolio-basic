@@ -1,0 +1,153 @@
+
+
+body {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 3rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.container > div {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  margin: 30px 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 6px solid #667eea;
+}
+
+.container > div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+}
+
+.container > div:nth-child(1) {
+  border-left-color: #667eea;
+}
+
+.container > div:nth-child(2) {
+  border-left-color: #764ba2;
+}
+
+.container > div:nth-child(3) {
+  border-left-color: #f093fb;
+}
+
+h2 {
+  color: #667eea;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #f093fb;
+  display: inline-block;
+  font-weight: 600;
+}
+
+.m-2 {
+  padding-left: 20px;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+  margin: 12px 0;
+  display: flex;
+  align-items: center;
+}
+
+p span {
+  margin-left: 10px;
+}
+
+p span b {
+  color: #764ba2;
+  font-weight: 600;
+  background: linear-gradient(135deg, #667eea22 0%, #764ba222 100%);
+  padding: 4px 12px;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+p::before {
+  content: "▸";
+  color: #667eea;
+  font-size: 1.3rem;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+    padding: 20px 10px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .container > div {
+    margin: 20px 10px;
+    padding: 20px;
+  }
+
+  p {
+    font-size: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  p span {
+    margin-left: 0;
+    margin-top: 5px;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.container > div {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.container > div:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.container > div:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.container > div:nth-child(3) {
+  animation-delay: 0.5s;
+}
+
+html {
+  scroll-behavior: smooth;
+}

@@ -329,3 +329,8 @@
   gap: 30px;
   margin-top: 30px;
 }
+
+.links {
+  text-decoration: none;
+  color: black;
+}
